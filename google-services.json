@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "995319569568",
+    "firebase_url": "https://gym-spot-cae5a.firebaseio.com",
+    "project_id": "gym-spot-cae5a",
+    "storage_bucket": "gym-spot-cae5a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:995319569568:android:997effee4385034f227dc5",
+        "android_client_info": {
+          "package_name": "com.example.gymspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "995319569568-7qjpabjk8ht3rgse477q26ivb4d66ipb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gymspot",
+            "certificate_hash": "60884055d068a0dfcab856a5750c7a12cc9a1f82"
+          }
+        },
+        {
+          "client_id": "995319569568-ik63ep4d79veiq262lq6p8k5n7b0he8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIxzpz0hCSDWblZIuLhDJg6UsoAkpbAnM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "995319569568-ik63ep4d79veiq262lq6p8k5n7b0he8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
