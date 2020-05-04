@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.widget.Button;
 
 public class ResetActivity extends AppCompatActivity {
-    private TextView email;
-    private Button F;
-    private firebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
