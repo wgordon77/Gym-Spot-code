@@ -94,6 +94,7 @@ public class Register extends AppCompatActivity {
                 progressBar.setVisibility(View.VISIBLE);
 
                 //register user in firebase
+                //also store their information
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {

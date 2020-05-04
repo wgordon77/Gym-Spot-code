@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gymspot"
+    tools:context=".viewprofile">
+
+    <TextView
+        android:id="@+id/profileCity"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="400dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your City"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profileGender"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="356dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your Gender"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profileAge"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="312dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your Age"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profileFitnessLevel"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="268dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your Fitness Level"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profileStyleOfWorkout"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="180dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your Gym Membership"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profileGymmembership"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="224dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your Style of Workout"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profileEmail"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="444dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your email"
+        android:padding="10dp"
+        android:textColorHint="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/backBttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/alfa_slab_three"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/makeChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:fontFamily="@font/alfa_slab_three"
+        android:text="Make Chnages"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/profileFullName"
+        android:layout_width="188dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="488dp"
+        android:background="@color/common_google_signin_btn_text_dark_default"
+        android:hint="Your name"
+        android:padding="10dp"
+        android:textColorHint="#0B0A0A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
