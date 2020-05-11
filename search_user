@@ -12,6 +12,9 @@ import gnu.gettext.*;
         
         User buddy = new User()
         //How to reference Firebase database(that being ravis bobby livedemoo and RayRay
+        //buddy.
+        //buddy.
+        //buddy.
 
         myRef.child(key).setValue(buddy);
         database.getReference("user" + FirebaseAuth.getInstance().getCurrentUser().getUid());
