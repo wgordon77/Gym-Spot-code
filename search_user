@@ -1,27 +1,50 @@
-class User { 
-    public String email;
-    public String name;
-}
+//Author Jordon Bantin
+import java.util.*;
+import java.io.*;
+import java.text.*;
+import gnu.gettext.*;
 
-FirebaseDatabase database = FirebaseDatabase.getInstance();
-           
-database.getReference("myUsersEndPoint").orderByChild("email").equalTo("emailToSearchhere").addListenerForSingleValueEvent(
-            new ValueEventListener() 
+    private void FireB_User(String email)
+    {
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference myRef = database.getReference("user");
+        String key = myRef.push().getKey();
+        
+        User buddy = new User()
+        //How to reference Firebase database(that being ravis bobby livedemoo and RayRay
+
+        myRef.child(key).setValue(buddy);
+        database.getReference("user" + FirebaseAuth.getInstance().getCurrentUser().getUid());
+    }
+  
+    private void getUserData()
+{
+    FirebaseUser buddy=FirebaseAuth.getInstance().getCurrentUser();
+    String userid=buddy.getUid();
+    DatabaseReference reference = FirebaseDatabase.getInstance().getReference("buddy");
+    reference.child(userid).addListenerForSingleValueEvent(new ValueEventListener() {
+        @Override
+        
+        public void onDataChange(DataSnapshot dataSnapshot) 
+        {
+            String email = dataSnapshot.getValue(User.class).getEmail();
+            String firstName = dataSnapshot.getValue(User.class).getFirstName();
+            Log.d("Datasnapshot",email+" "+firstName);
+        }
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("user");
+        reference.orderByChild("firstName").equalTo(name).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            
+            public void onDataChange(DataSnapshot dataSnapshot) 
             {
-                @Override
-                
-                public void onDataChange(DataSnapshot dataSnapshot)
+                for(DataSnapshot datas: dataSnapshot.getChildren())
                 {
-                
-                  for (DataSnapshot data : dataSnapshot.getChildren()) 
-                  {
-                      // here the user will have the specified email only 
-                  }
+                String familyname=datas.child("familyName").getValue().toString();
+    }
+ }
+        @Override
+        public void onCancelled(DatabaseError databaseError) {
 
-               }
-
-      @Override
-      public void onCancelled(DatabaseError databaseError) 
-                Log.w("MyApp", "getUser:onCancelled", databaseError.toException());
-      }
-   });
+        }
+    });
+}
