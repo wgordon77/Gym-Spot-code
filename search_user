@@ -1,0 +1,27 @@
+class User { 
+    public String email;
+    public String name;
+}
+
+FirebaseDatabase database = FirebaseDatabase.getInstance();
+           
+database.getReference("myUsersEndPoint").orderByChild("email").equalTo("emailToSearchhere").addListenerForSingleValueEvent(
+            new ValueEventListener() 
+            {
+                @Override
+                
+                public void onDataChange(DataSnapshot dataSnapshot)
+                {
+                
+                  for (DataSnapshot data : dataSnapshot.getChildren()) 
+                  {
+                      // here the user will have the specified email only 
+                  }
+
+               }
+
+      @Override
+      public void onCancelled(DatabaseError databaseError) 
+                Log.w("MyApp", "getUser:onCancelled", databaseError.toException());
+      }
+   });
