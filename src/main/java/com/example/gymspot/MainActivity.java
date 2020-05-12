@@ -12,17 +12,13 @@ public class MainActivity extends AppCompatActivity {
 
 
     Button nSettings;
-    
-    Button nForgotPass;
-    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         nSettings = findViewById(R.id.settingsButn);
-        nForgotPass = findViewById(R.id.forgotPass);
-        
 
         nSettings.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,15 +27,9 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(getApplicationContext(), settings.class));
             }
         });
-        
-        nforgotPass.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                startActivity(new Intent(getApplicationContext(),ForgotPassword.class));
 
-           }
-        });
+
 
 
     }
